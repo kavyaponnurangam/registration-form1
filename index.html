@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>College Online Registration Form</h2>
+        <form id="regForm" action="process.php" method="POST">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="fullname" id="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <label>Date of Birth:</label>
+<input type="date" name="dob" id="dob" required min="1950-01-01" max="2025-01-01">
+
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" name="age" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email ID</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" name="phone" id="phone" required maxlength="10">
+            </div>
+
+            <div class="form-group">
+                <label>Course Applying For</label>
+                <select name="course" id="course">
+                    <option value="">-- Select Course --</option>
+                    <option>BCA</option>
+                    <option>BBA</option>
+                    <option>B.E</option>
+                    <option>MCA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Address</label>
+                <textarea name="address" id="address" required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Application</button>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
