@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #4e8cff, #a3bfff);
+    background:color: #444;
     margin: 0;
     padding: 0;
 }
@@ -57,5 +57,5 @@ button {
 }
 
 button:hover {
-    background: #0041c9;
+    background: lightcyan;
 }
